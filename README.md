@@ -16,4 +16,32 @@ Tu as une branche `main`qui est celle de "production". C'est à dire qu'on ne co
 Tu as une branche `dev` qui est la branche de test. 
 Quand ton site fonctionne correctement en local avec la branche dev, tu feras une petite manip pour qu'elle passe en production.
 
+#### Pour passer d'une branche à l'autre :
+`git checkout <nom de la branche>`
+
+#### Pour enregistrer son travail :
+```
+git add .
+git commit -m "<explication>"
+git push
+```
+
+Explications :
+`git add .` permet d'ajouter toutes tes modifications dans une mémoire
+`git commit -m ""` décrit ce que tu as fait. Exemple : `git commit -m "correction orthographique"`
+`git push` permet d'envoyer les informations sur le serveur.
+
+En utilisant ce système, si tu fais des bêtises, tu pourras m'appeler et me dire oups j'ai fait une connerie et je pourrais tout réparer.
+
+Bien entendu avant toute chose tu vérifie que tu est bien sur la branche dev.
+
+#### Pour vérifier sur quelle branche on est :
+`git branch`
+
+#### Pour transférer les modifications sur `main` :
+```
+git checkout main
+git merge dev
+```
+
 
