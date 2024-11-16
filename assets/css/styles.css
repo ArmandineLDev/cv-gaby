@@ -1,3 +1,11 @@
+/* Définition des variables globales */
+:root {
+    --primary-color: #8B0000;
+    --secondary-color: #B22222;
+    --primary-color-light: #fff;
+    --secondary-color-light: #f4f4f4;
+    --background-nav-color: #333;
+}
 /* Réinitialisation */
 * {
     margin: 0;
@@ -10,7 +18,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
-    background: #f4f4f4;
+    background: var(--secondary-color-light);
     padding: 0 20px;
 }
 
@@ -18,8 +26,8 @@ body {
 .hero {
     text-align: center;
     padding: 50px 20px;
-    background: linear-gradient(135deg, #8B0000, #B22222);
-    color: #fff;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--primary-color-light);
 }
 
 .hero h1 {
@@ -32,9 +40,23 @@ body {
     font-style: italic;
 }
 
+/* Style du lien pour le téléchargement du CV */
+.hero a.download-cv {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: var(--primary-color-light);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
 /* Navigation */
 nav {
-    background: #333;
+    background: var(--background-nav-color);
     padding: 10px 0;
     margin-bottom: 20px;
 }
@@ -50,21 +72,21 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: var(--primary-color-light);
     text-decoration: none;
     font-weight: bold;
     font-size: 1em;
 }
 
 nav ul li a:hover {
-    color: #8B0000;
+    color: var(--primary-color);
 }
 
 /* Sections */
 .section {
     padding: 30px;
     margin-bottom: 20px;
-    background: #fff;
+    background: var(--primary-color-light);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -74,7 +96,7 @@ nav ul li a:hover {
 }
 
 .section h2 {
-    color: #8B0000;
+    color: var(--primary-color);
     font-size: 2em;
     margin-bottom: 20px;
 }
@@ -86,7 +108,7 @@ nav ul li a:hover {
 
 .experience h3 {
     font-size: 1.5em;
-    color: #333;
+    color: var(--background-nav-color);
 }
 
 .experience p {
@@ -96,7 +118,7 @@ nav ul li a:hover {
 
 /* Contact */
 a {
-    color: #8B0000;
+    color: var(--primary-color);
     text-decoration: none;
 }
 
