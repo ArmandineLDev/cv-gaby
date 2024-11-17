@@ -135,6 +135,10 @@ nav ul li a:hover {
     color: #555;
 }
 
+.task-list {
+    margin-left: 2rem;
+}
+
 /* Contact */
 a {
     color: var(--primary-color);
