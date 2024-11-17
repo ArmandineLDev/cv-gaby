@@ -1,7 +1,7 @@
 /* Définition des variables globales */
 :root {
-    --primary-color: #8B0000;
-    --secondary-color: #B22222;
+    --primary-color: #244d1f;
+    --secondary-color: #801717;
     --primary-color-light: #fff;
     --secondary-color-light: #f4f4f4;
     --background-nav-color: #333;
@@ -20,28 +20,43 @@ body {
     color: #333;
     background: var(--secondary-color-light);
     padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 /* En-tête */
 .hero {
     text-align: center;
-    padding: 50px 20px;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 1.4rem;
+    background: linear-gradient(153deg, var(--primary-color), var(--secondary-color));
     color: var(--primary-color-light);
+    display: flex;
 }
-
-.hero h1 {
+.profile-img{
+    /* position: relative; */
+    width: 200px;
+}
+.hero-prez{
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.hero-prez-title h1 {
     font-size: 3em;
-    margin-bottom: 10px;
+    /* margin-bottom: 0.5rem; */
 }
 
-.hero p {
+.hero-prez-title p {
     font-size: 1.2em;
     font-style: italic;
 }
 
 /* Style du lien pour le téléchargement du CV */
-.hero a.download-cv {
+.download-cv {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
@@ -52,6 +67,10 @@ body {
     border-radius: 5px;
     font-size: 1em;
     transition: background 0.3s ease, color 0.3s ease;
+}
+
+a.download-cv {
+   margin-top: 3rem;
 }
 
 /* Navigation */
@@ -132,4 +151,15 @@ footer {
     padding: 10px 0;
     font-size: 0.9em;
     color: #666;
+}
+
+@media (max-width: 480px) {
+    /* Styles pour les écrans plus petits que 768px */
+}
+@media (max-width: 768px) {
+    /* Styles pour les écrans plus petits que 768px */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Styles pour les écrans entre 769px et 1024px */
 }
