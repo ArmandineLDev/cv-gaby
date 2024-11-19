@@ -23,6 +23,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1rem;
+    font-size: 100%
 }
 
 /* En-tête */
@@ -161,7 +162,10 @@ footer {
 }
 
 @media (max-width: 480px) {
-    /* Styles pour les écrans plus petits que 768px */
+    /* Styles pour les écrans plus petits que 480px */
+    body{
+        font-size: 75%;
+    }
 }
 @media (max-width: 768px) {
     /* Styles pour les écrans plus petits que 768px */
