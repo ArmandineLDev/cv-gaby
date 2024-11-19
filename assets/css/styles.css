@@ -113,6 +113,15 @@ a.download-cv {
 }
 .navbar__links {
 	display: flex;
+	align-items: center;
+		justify-content: space-between;
+		gap: 1.5rem;
+		margin: 0 auto;
+		
+}
+.navbar__links li {
+	list-style: none;
+	color: var(--primary-color-light);
 }
 
 .navbar__links a {
@@ -120,6 +129,9 @@ a.download-cv {
 	text-decoration: none;
 	font-weight: bold;
 	font-size: 1em;
+	align-items: center;
+		
+		
 }
 
 .main-nav a:hover {
