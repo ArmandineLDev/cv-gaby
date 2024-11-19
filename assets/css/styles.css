@@ -1,176 +1,237 @@
 /* Définition des variables globales */
 :root {
-    --primary-color: #244d1f;
-    --secondary-color: #801717;
-    --primary-color-light: #fff;
-    --secondary-color-light: #f4f4f4;
-    --background-nav-color: #333;
+	--primary-color: #244d1f;
+	--secondary-color: #801717;
+	--primary-color-light: #fff;
+	--secondary-color-light: #f4f4f4;
+	--background-nav-color: #333;
 }
 /* Réinitialisation */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 /* Styles globaux */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background: var(--secondary-color-light);
-    padding: 0 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-    font-size: 100%
+	font-family: 'Arial', sans-serif;
+	line-height: 1.6;
+	color: #333;
+	background: var(--secondary-color-light);
+	padding: 0 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1rem;
+	font-size: 100%;
 }
 
 /* En-tête */
 .hero {
-    text-align: center;
-    padding: 1.4rem;
-    background: linear-gradient(153deg, var(--primary-color), var(--secondary-color));
-    color: var(--primary-color-light);
-    display: flex;
+	text-align: center;
+	padding: 1.4rem;
+	background: linear-gradient(
+		153deg,
+		var(--primary-color),
+		var(--secondary-color)
+	);
+	color: var(--primary-color-light);
+	display: flex;
 }
-.profile-img{
-    /* position: relative; */
-    width: 200px;
+.profile-img {
+	/* position: relative; */
+	width: 200px;
 }
-.hero-prez{
-    flex-grow: 4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+.hero-prez {
+	flex-grow: 4;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
 }
 .hero-prez-title h1 {
-    font-size: 3em;
-    /* margin-bottom: 0.5rem; */
+	font-size: 3em;
+	/* margin-bottom: 0.5rem; */
 }
 
 .hero-prez-title p {
-    font-size: 1.2em;
-    font-style: italic;
+	font-size: 1.2em;
+	font-style: italic;
 }
 
 /* Style du lien pour le téléchargement du CV */
 .download-cv {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background: var(--primary-color-light);
-    color: var(--primary-color);
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    font-size: 1em;
-    transition: background 0.3s ease, color 0.3s ease;
+	display: inline-block;
+	margin-top: 10px;
+	padding: 10px 20px;
+	background: var(--primary-color-light);
+	color: var(--primary-color);
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 5px;
+	font-size: 1em;
+	transition: background 0.3s ease, color 0.3s ease;
 }
 
 a.download-cv {
-   margin-top: 3rem;
+	margin-top: 3rem;
 }
 
 /* Navigation */
-nav {
-    background: var(--background-nav-color);
-    padding: 10px 0;
-    margin-bottom: 20px;
+.navbar {
+	background: var(--background-nav-color);
+	padding: 0.33rem 0;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
+.burger-menu {
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
 }
 
-nav ul li {
-    margin: 0 15px;
+.burger-menu .line {
+	width: 25px;
+	height: 3px;
+	background-color: white;
+	margin: 3px 0;
+	transition: all 0.3s ease-in-out;
 }
 
-nav ul li a {
-    color: var(--primary-color-light);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1em;
+.main-nav {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+}
+.navbar__links {
+	display: flex;
 }
 
-nav ul li a:hover {
-    color: var(--primary-color);
+.navbar__links a {
+	color: var(--primary-color-light);
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.main-nav a:hover {
+	color: var(--primary-color);
 }
 
 /* Sections */
 .section {
-    padding: 30px;
-    margin-bottom: 20px;
-    background: var(--primary-color-light);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 30px;
+	margin-bottom: 20px;
+	background: var(--primary-color-light);
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .section.bg-light {
-    background: #f9f9f9;
+	background: #f9f9f9;
 }
 
 .section h2 {
-    color: var(--primary-color);
-    font-size: 2em;
-    margin-bottom: 20px;
+	color: var(--primary-color);
+	font-size: 2em;
+	margin-bottom: 20px;
 }
 
 /* Expériences */
 .experience {
-    margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .experience h3 {
-    font-size: 1.5em;
-    color: var(--background-nav-color);
+	font-size: 1.5em;
+	color: var(--background-nav-color);
 }
 
 .experience p {
-    font-size: 1em;
-    color: #555;
+	font-size: 1em;
+	color: #555;
 }
 
 .task-list {
-    margin-left: 2rem;
+	margin-left: 2rem;
 }
 
-.experience ul{
-    margin-bottom: 0.8rem;
+.experience ul {
+	margin-bottom: 0.8rem;
 }
 /* Contact */
 a {
-    color: var(--primary-color);
-    text-decoration: none;
+	color: var(--primary-color);
+	text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 /* Pied de page */
 footer {
-    text-align: center;
-    padding: 10px 0;
-    font-size: 0.9em;
-    color: #666;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 0.9em;
+	color: #666;
 }
 
 @media (max-width: 480px) {
-    /* Styles pour les écrans plus petits que 480px */
-    body{
-        font-size: 75%;
-    }
+	/* Styles pour les écrans plus petits que 480px */
+	body {
+		font-size: 75%;
+	}
 }
 @media (max-width: 768px) {
-    /* Styles pour les écrans plus petits que 768px */
+	/* Styles pour les écrans plus petits que 768px */
+	.navbar {
+		height: 50px;
+	}
+	/* .main-nav{
+        display: none;
+        flex-direction: column;
+    } */
+
+	/* .burger-menu a{
+        width: 50%;
+    } */
+
+	.navbar__links {
+		display: none;
+		flex-direction: column;
+		background-color: #333;
+		position: absolute;
+		top: 50px;
+		right: 20px;
+		padding: 10px;
+		border-radius: 8px;
+	}
+
+    .navbar__links.show {
+        display: flex;
+    }
+
+          .navbar__links li {
+              margin: 10px 0;
+          }
+
+	.burger-menu {
+		display: flex;
+		width: 1.8rem;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		font-size: 3rem;
+		background-color: var(--background-nav-color);
+		cursor: pointer;
+	}
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    /* Styles pour les écrans entre 769px et 1024px */
+	/* Styles pour les écrans entre 769px et 1024px */
 }
