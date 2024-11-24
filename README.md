@@ -1,9 +1,6 @@
 # CV Gabriel
 
 ## Modification à faire
-- ajour dossir étude
-- cases -> diplome
-- article de journal
 - partie diers
 - redac a propos
 
@@ -54,7 +51,7 @@ git merge dev
 ```
 
 ### Adresse de Prod :
-https://gabrielbarge.netlify.app/
+https://gabrielbarge.fr
 
 BON TRAVAIL
 
