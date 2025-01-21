@@ -1,8 +1,7 @@
 # CV Gabriel
 
 ## Modification à faire
-- partie diers
-- redac a propos
+-
 
 ## Installation et fonctionnement
 
