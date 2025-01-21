@@ -5,6 +5,7 @@
 	--primary-color-light: #fff;
 	--secondary-color-light: #f4f4f4;
 	--background-nav-color: #333;
+	--color-H4: #676767;
 }
 /* Réinitialisation */
 * {
@@ -72,6 +73,14 @@ body {
 	border-radius: 5px;
 	font-size: 1em;
 	transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Style du lien pour les page des doamine */
+.domaine {
+	display: inline-block;
+	color: var(--color-H4);
+	font-weight: bold;
+	font-size: 1.1em;
 }
 
 a.download-cv {
@@ -169,7 +178,7 @@ a.download-cv {
 
 .experience h4 {
 	font-size: 1.1em;
-	color: #676767;
+	color: var(--color-H4);
 }
 
 .experience p {
